@@ -1,0 +1,59 @@
+
+#root{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    background-image: linear-gradient(to right, rgb(253, 196, 220), rgb(73, 0, 43));
+}
+.pic{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header{
+grid-row-start: 1;
+grid-row-end: 2;
+grid-column-start: 1;
+grid-column-end: 5;
+display: flex;
+justify-content: center;
+text-shadow: 2px 2px rgb(255, 255, 255);
+color:  rgb(255, 73, 149);
+font-size: 85px;
+font-weight: 600;
+}
+.rule{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    color:  rgb(255, 73, 149);
+    padding-left: 30px;
+    font-weight: 600;
+}
+.score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 1;
+    grid-column-start: 5;
+    grid-column-end: 6;
+    color:  rgb(255, 73, 149);
+}
+.high-score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row-start: 2;
+    grid-column-start: 5;
+    grid-column-end: 6; 
+    color:  rgb(255, 73, 149);
+}
+button img{
+border-radius: 20px;
+   object-fit: fill;
+}
+button{
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
